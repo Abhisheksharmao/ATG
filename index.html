@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="./whole.png" alt="">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#ino">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="ino">
+                <div class="navbar-nav">
+                    <input id="in" type="search" placeholder="Search for your favorite groups in ATG" name="search"
+                        style=" border-radius:20px; ">
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a href="#" onclick="openform()">create account it's free</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- signup -->
+    <div class="container can" id="myform" style="background: #ffff; border: 1px solid black; width: 750px; border-radius:20px; position:relative; display: none; height: 500px" >
+        <button onclick="closeform()" style="margin-left: 90%;">Close</button>
+        <div class="he">
+            <p style="color: #008A45;">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now
+                🤘🏼</p>
+        </div>
+        <div class="login d-flex form-popup" >
+
+            <div class="container" style="width: 60%;">
+                <div>
+
+                    <form>
+                        <h1>Create Account</h1>
+                        <input type="text" name="" id="" placeholder="First Name" > <input type="text"
+                            placeholder="Last Name" name="" id="" >
+                        <input type="email" name="" id="omg" placeholder="Enter Email" style=" padding: 5px;">
+                        <br>
+                        <input type="password" name="" id="omg" placeholder="Enter password " style=" padding: 5px;">
+                        <br>
+                        <input type="password" name="" id="omg" placeholder="Confirm password" style=" padding: 5px;">
+                        <br>
+                        <button class="om" id="omg" type="submit" >Create Account</button>
+                        <br>
+                        <button class="og" id="omg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+                            <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
+                            </svg>Sign up with Facebook</button>
+                        <br>
+                        <button class="og" id="omg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+                            <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+                            </svg>Sign up with Google</button>
+                    </form>
+                </div>
+            </div>
+            <div class="oth " style="width: 40%;">
+                <a href="#" onclick="openfarm()">Already have an account? Sign In</a>
+                <img src="./Group 3.png" alt="">
+                <p style="font-size: 12px;">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+            </div>
+        </div>
+    </div>
+
+
+<!-- login -->
+
+<div class="container" id="myfarm" style="background: #ffff; border: 1px solid black; width: 750px; border-radius:20px; position:relative; display: none;height: 500px" >
+    <button onclick="closefarm()" style="margin-left: 90%;">Close</button>
+    <div class="he">
+        <p style="color: #008A45;">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now
+            🤘🏼</p>
+    </div>
+    <div class="login d-flex form-popup" >
+
+        <div class="container" style="width: 60%;">
+            <div>
+
+                <form>
+                    <h1>Sign In</h1>
+                    <input type="email" name="" id="omg" placeholder="Enter Email" style=" padding: 5px;">
+                    <br>
+                    <input type="password" name="" id="omg" placeholder="Enter password " style=" padding: 5px;">
+                    <br>
+                    <button class="om" id="omg" type="submit" >Create Account</button>
+                    <br>
+                    <button class="og" id="omg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+                        <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
+                        </svg>Sign up with Facebook</button>
+                    <br>
+                    <button class="og" id="omg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+                        <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+                        </svg>Sign up with Google</button>
+                </form>
+            </div>
+        </div>
+        <div class="oth " style="width: 40%;">
+            <a href="#" onclick="openform()">Don’t have an account yet? Create new for free!</a>
+            <img src="./Group 3.png" alt="">
+            <p style="font-size: 12px;">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+        </div>
+    </div>
+</div>
+
+
+
+    <img src="./Screenshot 2023-12-20 202251.png" class="img-fluid w-100" alt="...">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand " style="text-decoration: underline;">All Posts(503)</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link active">Article</a>
+                    <a href="#" class="nav-item nav-link">Event</a>
+                    <a href="#" class="nav-item nav-link">Education</a>
+                    <a href="#" class="nav-item nav-link " tabindex="-1">Job</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <button style=" padding: 7px; background-color:#EDEEF0; border-radius:10px ">
+                        <h4 style="font-size:15px;  ">Write a Post</h4>
+                    </button>
+                    <button style="background-color: #2F6CE5; color :white; padding: 5px; margin-left:20px;border-radius:10px ">
+                        <h4 style="font-size:15px">Join Group</h4>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <hr>
+    
+
+    <div class="d-flex container">
+        <div class="cr col-xl-6 col-12">
+            <div class="card" style=" border : 1px solid black">
+                <img src="./Rectangle 5.png" class="card-img-top " alt="...">
+                <p class="m-1">✍️ Article</p>
+                <div class="card-body">
+                    <h5 class="card-title">What if famous brands had regular fonts? Meet RegulaBrands!</h5>
+                    <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…
+                    </p>
+                </div>
+                <div class="d-flex">
+                    <h4 style="margin-left: 20px; font-size: 16px">Sarthak Karma</h4>
+                    <p style="margin-left: 40%;">1.4k views</p>
+                </div>
+            </div>
+
+
+            <div class="card mt-5" style=" border : 1px solid black">
+                <img src="./Rectangle 5 (1).png" class="card-img-top" alt="...">
+                <p class="m-1">✍️ Education</p>
+                <div class="card-body">
+                    <h5 class="card-title">Tax Benefits for Investment under National Pension Scheme launched by
+                        Government
+                    </h5>
+                    <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…
+                    </p>
+                </div>
+                <div class="d-flex">
+                    <h4 style="margin-left: 20px; font-size: 16px">Sarah West</h4>
+                    <p style="margin-left: 40%;">1.4k views</p>
+                </div>
+            </div>
+
+
+            <div class="card mt-5" style="  border : 1px solid black">
+                <img src="./Rectangle 5 (2).png" class="card-img-top" alt="...">
+                <p class="m-1">🗓️ Meetup</p>
+                <div class="card-body">
+                    <h5 class="card-title">Finance & Investment Elite Social Mixer @Lujiazui</h5>
+                </div>
+                <div class="d-flex">
+                    <p style="margin-left: 20px;">Fri, 12 Oct, 2018</p>
+                    <p style="margin-left: 50px;">Ahmedabad, India</p>
+                </div>
+                <button class="mx-auto p-2"
+                    style="width: 80%; color:red; border: 1px solid black; border-radius:20px">Visit
+                    Website</button>
+                <div class="d-flex">
+                    <h4 style="margin-left: 20px ; font-size: 16px">Ronal Jones</h4>
+                    <p style="margin-left: 40%;">1.4k views</p>
+                </div>
+            </div>
+
+
+            <div class="card mt-5" style=" border : 1px solid black">
+                <p class="m-1">💼️ Job</p>
+                <div class="card-body">
+                    <h5 class="card-title">Software Developer</h5>
+                </div>
+                <div class="d-flex">
+                    <p style="margin-left: 20px;">Innovaccer Analytics Private Ltd.</p>
+                    <p style="margin-left: 50px;">Noida, India</p>
+                </div>
+                <button class="mx-auto p-2"
+                    style="width: 80%; color:green; border: 1px solid black; border-radius:20px">Apply on
+                    Timesjobs</button>
+                <div class="d-flex">
+                    <h4 style="margin-left: 20px; font-size: 16px">Joseph Gray</h4>
+                    <p style="margin-left: 40%;">1.4k views</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="en col-xl-4 col-sm-0 " style="margin-left: 10%; width:300px">
+            <button style="width: 300px; border:none;">Noida,India</button>
+            <hr>
+            <p>Your location will help us serve better and extend a personalised experience.</p>
+
+            <div class="gr ">
+                <h1 style="font-size: 20px;">Recommended Groups</h1>
+                <div class="container oo">
+                    <div class="li">
+                        <ul>
+                            <li><img src="./Rectangle 6 .png" alt=""> Leisure</li>
+                            <li><img src="./Rectangle 6 (1).png" alt=""> Activism </li>
+                            <li><img src="./Rectangle 6 (2).png" alt=""> MBA </li>
+                            <li><img src="./Rectangle 6 (3).png" alt=""> Philosophy </li>
+                        </ul>
+                    </div>
+                    <div class="but">
+                        <button>Followed</button>
+                        <button style="background-color: grey; color: black">Follow</button>
+                        <button style="background-color: grey; color: black">Follow</button>
+                        <button style="background-color: grey; color: black">Follow</button>
+                    </div>
+                </div>
+                <button type="button"
+                    style="margin-left: 50%; margin-top:10% ; border:none; color: blue; background-color: white">See
+                    more...</button>
+            </div>
+        </div>
+
+
+    </div>
+   
+
+
+<script>
+    function openform(){
+        document.getElementById("myform").style.display="block";
+        document.getElementById("myfarm").style.display="none";
+    }
+    function closeform(){
+        document.getElementById("myform").style.display="none";
+    }
+    function openfarm(){
+        document.getElementById("myfarm").style.display="block";
+        document.getElementById("myform").style.display="none";
+    }
+    function closefarm(){
+        document.getElementById("myfarm").style.display="none";
+    }
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

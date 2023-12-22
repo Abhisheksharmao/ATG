@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 600px;
+    max-width: 100%;
+}
+
+#in {
+    margin-left: 300px;
+    width: 500px;
+    padding: 5px;
+}
+
+#omg {
+    width: 89%;
+}
+
+.om {
+    background-color: #2F6CE5;
+    color: white;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.og {
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 0.5px solid black;
+}
+
+.login {
+    width: 736px;
+    height: 513px;
+    z-index: 9;
+}
+
+.can{
+    width: 750px;
+    height: 500px;
+}
+@media screen and (width < 600px) {
+    h1 {
+        font-size: 10px;
+    }
+
+    h4 {
+        font-size: 5px;
+    }
+
+    h5 {
+        font-size: 5px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .en {
+        display: none;
+    }
+
+    #in {
+        width: 300px;
+        margin-left: 0;
+    }
+    .can{
+        width: 325px;
+        height: 250px;
+    }
+
+}
+
+
+.li {
+    width: 50%;
+}
+
+.li ul li {
+    list-style: none;
+    margin: 10px;
+    display: flex;
+    width: 200px;
+}
+
+.but {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.but button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-top: 13px;
+    margin-left:20px;
+}
+
+.oo {
+    display: flex;
+}
